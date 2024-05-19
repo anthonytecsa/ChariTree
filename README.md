@@ -19,6 +19,8 @@ As for next steps, stay tuned! We definitely have more tracking and analytics fe
 
 Huge thanks to the team and for struggling together
 
+Here's the code for out Django backend: [cool repo](https://github.com/Kenneth-Ye/ChariTree)
+
 ## Authors
 
   - **Anthony Tecsa**
