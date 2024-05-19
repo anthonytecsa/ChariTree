@@ -16,7 +16,7 @@ const Login = () => {
   async function handleLogin(e) {
     e.preventDefault();
     let data;
-    const response = await fetch('http://172.20.10.13:8000/custom_auth/login', {
+    const response = await fetch('http://172.20.10.2:8000/custom_auth/login', {
       method: "POST",
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(

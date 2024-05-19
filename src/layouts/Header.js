@@ -21,7 +21,7 @@ const Header = () => {
                 <div className="flex mt-4">
                     <img src={logo2} alt="Charitree Logo" className="flex w-30 h-20 ml-3"/>
                     <img src={charitreetext} alt="Charitree Logo" className="flex w-50 h-11 mt-6"/>
-                    <a className="float-left ml-3 text-gray-200 text-center px-5 py-6 no-underline text-lg hover:bg-gray-200 hover:text-black" href="#home">Home</a>
+                    <a className="float-left ml-3 text-gray-200 text-center px-5 py-6 no-underline text-lg hover:bg-gray-200 hover:text-black" href="#dashboard">Home</a>
                     <a className="float-left text-gray-200 text-center px-4 py-6 no-underline text-lg hover:bg-gray-200 hover:text-black" href="#contact">Contact</a>
                     <a className="float-left text-gray-200 text-center px-4 py-6 no-underline text-lg hover:bg-gray-200 hover:text-black" href="#about">About</a>
                     {user ? (
