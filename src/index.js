@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import { HashRouter } from "react-router-dom";
 import './index.css';
 import { UserProvider } from './contexts/UserContext'
+import { CharityProvider } from './contexts/CharityContext';
 
 
 
@@ -13,7 +14,9 @@ root.render(
   <React.StrictMode>
     <HashRouter>
       <UserProvider>
-        <App />
+        <CharityProvider>
+          <App />
+        </CharityProvider>
       </UserProvider>
     </HashRouter>
   </React.StrictMode>

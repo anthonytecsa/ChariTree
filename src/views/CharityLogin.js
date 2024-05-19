@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import logo2 from '../assets/logo2.png';
 import { UserContext } from '../contexts/UserContext';
 import { useContext } from 'react';
+import hexBackground  from '../assets/HEX-BACKGROUND.png';
 
 
 const CharityLogin = () => {
@@ -27,13 +28,12 @@ const CharityLogin = () => {
       } else {
         console.log("Failed")
       }
-    
     // On successful signup, redirect to the login page or dashboard
-    navigate('/dashboard');
+    navigate('/charity-dashboard');
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-grey900">
+    <div className="min-h-screen flex items-center justify-center" style={{ backgroundImage: `url(${hexBackground})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <div className="flex w-full max-w-4xl bg-white rounded-xl shadow-lg overflow-hidden">
         <div className="w-full p-10">
           {/* Logo ontop of signin */}

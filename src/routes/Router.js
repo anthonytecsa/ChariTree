@@ -10,7 +10,7 @@ const Dashboard = lazy(() => import("../views/Dashboard"));
 const Login = lazy(() => import("../views/Login"));
 const Signup = lazy(() => import("../views/Signup"));
 const CharityLogin = lazy(() => import("../views/CharityLogin"));
-
+const CharityDashboard = lazy(() => import("../views/CharityDashboard"));
 
 /*****Routes******/
 const ThemeRoutes = [
@@ -49,6 +49,22 @@ const ThemeRoutes = [
       { path: "", element: (
         <Suspense fallback={<Loader />}>
           <Dashboard />
+        </Suspense>
+        ),
+      },
+    ],
+  },
+  {
+    path: "/charity-dashboard",
+    element: (
+      <Suspense fallback={<Loader />}>
+        <FullLayout />
+      </Suspense>
+    ),
+    children: [
+      { path: "", element: (
+        <Suspense fallback={<Loader />}>
+          <CharityDashboard />
         </Suspense>
         ),
       },
